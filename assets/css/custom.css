@@ -2,50 +2,60 @@
 
 /* Custom fonts */
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Lato Regular"), local("Lato-Regular"),
+        url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf)
+            format("truetype");
 }
 
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Lato Bold"), local("Lato-Bold"),
+        url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf)
+            format("truetype");
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevT.ttf) format('truetype');
+    font-family: "Source Code Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Source Code Pro Regular"), local("SourceCodePro-Regular"),
+        url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevT.ttf)
+            format("truetype");
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Source Code Pro Medium'), local('SourceCodePro-Medium'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7PqtzsjDs-cv.ttf) format('truetype');
+    font-family: "Source Code Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Source Code Pro Medium"), local("SourceCodePro-Medium"),
+        url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7PqtzsjDs-cv.ttf)
+            format("truetype");
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Source Code Pro Bold'), local('SourceCodePro-Bold'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7Pqths7Ds-cv.ttf) format('truetype');
+    font-family: "Source Code Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Source Code Pro Bold"), local("SourceCodePro-Bold"),
+        url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_XiYsKILxRpg3hIP6sJ7fM7Pqths7Ds-cv.ttf)
+            format("truetype");
 }
 
 html {
-  font-family: Lato, system-ui, -apple-system, BlinkMacSystemFont, 'Microsoft YaHei', 'Segoe UI',
-                Ubuntu, Roboto, Oxygen, Cantarell, 'Fira Sans', 'Droid Sans',
-                'Helvetica Neue', Helvetica, Arial, Verdana, 'Lucida Grande',
-                sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    font-family: Lato, system-ui, -apple-system, BlinkMacSystemFont,
+        "Microsoft YaHei", "Segoe UI", Ubuntu, Roboto, Oxygen, Cantarell,
+        "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, Verdana,
+        "Lucida Grande", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 code,
@@ -53,21 +63,22 @@ pre,
 tt,
 kbd,
 samp {
-  font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
-  font-weight: 500;
+    font-family: "Source Code Pro", Menlo, Consolas, "Liberation Mono",
+        monospace;
+    font-weight: 500;
 }
 
 /* Custom "About" page image */
 .article.markdown-body img.about-avatar {
-  margin: 0 auto;
-  display: block;
-  transform: none;
-  -webkit-transform: none;
-  transition: none;
-  -webkit-transition: none;
-  border-radius: 3px;
-  box-shadow: 0 1px 8px 0 rgba(0,0,0,.12);
-  border: 2px solid #000000;
+    margin: 0 auto;
+    display: block;
+    transform: none;
+    -webkit-transform: none;
+    transition: none;
+    -webkit-transition: none;
+    border-radius: 3px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    border: 2px solid #000000;
 }
 
 body {
@@ -75,51 +86,50 @@ body {
 
 /* Font icon */
 @font-face {
-  font-family: "untitled-font-1";
-  src:url("/fonts/untitled-font-1.eot");
-  src:url("/fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
-  url("/fonts/untitled-font-1.woff") format("woff"),
-  url("/fonts/untitled-font-1.ttf") format("truetype"),
-  url("/fonts/untitled-font-1.svg#untitled-font-1") format("svg");
-  font-weight: normal;
-  font-style: normal;
-
+    font-family: "untitled-font-1";
+    src: url("/fonts/untitled-font-1.eot");
+    src: url("/fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/untitled-font-1.woff") format("woff"),
+        url("/fonts/untitled-font-1.ttf") format("truetype"),
+        url("/fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 [data-icon]:before {
-  font-family: "untitled-font-1" !important;
-  content: attr(data-icon);
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "untitled-font-1" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "untitled-font-1" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "untitled-font-1" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-github:before {
-  content: "\61";
+    content: "\61";
 }
 .icon-linkedin:before {
-  content: "\62";
+    content: "\62";
 }
 .icon-at-sign:before {
-  content: "\63";
+    content: "\63";
 }
 
 /* Extra tag */
@@ -127,29 +137,24 @@ body {
     display: inline-block;
     font-size: 15px;
     line-height: 1;
-
-  /*border: 1px solid #e6e6e6;*/
-  /*color: #eb7350;*/
-
-  color: #FEF7F5;
-  background-color: #eb7350;
-
-  padding: 6px;
-  border-radius: 2px;
-  font-weight: 700;
+    color: #fef7f5;
+    background-color: #eb7350;
+    padding: 6px;
+    border-radius: 2px;
+    font-weight: 700;
 }
 
 .extra-tag:hover {
-    opacity: .5;
-  text-decoration: none;
+    opacity: 0.5;
+    text-decoration: none;
 }
 
 .extra-tag [class^="icon-"] {
-  position: relative;
-  top: 2px;
+    position: relative;
+    top: 2px;
 }
 
 /* Default theme CSS override */
 .tag {
-  color: #eb7350;
+    color: #eb7350;
 }
