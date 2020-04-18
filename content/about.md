@@ -14,4 +14,5 @@ I love spending time on personal projects outside of that, too. Check out [my po
 
 Some languages/technologies I'm familiar with and enjoy using include Typescript, React, SCSS, WebAssembly, Golang and C.
 
-<a href="mailto:info.kevinpageau@gmail.com">Feel free to send me an email</a>.
+{{< extratag link="mailto:info.kevinpageau@gmail.com" icon="at-sign" text="Send me an email" noTargetBlank="1" >}}
+{{< extratag link="https://github.com/turnabout" icon="github" text="Check out my GitHub account" >}}

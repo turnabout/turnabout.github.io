@@ -1,4 +1,4 @@
-<a {{ with .Get "link"}} href="{{.}}" {{ end }} target="_blank" class="extra-tag">
+<a {{ with .Get "link"}} href="{{.}}" {{ end }} {{ if not (.Get "noTargetBlank")}}target="_blank"{{ end}} class="extra-tag">
     {{ with .Get "icon"}}<span class="icon-{{.}}"></span> {{ end }}
     {{ with .Get "text"}}{{.}}{{ end }}
 </a>
