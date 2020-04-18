@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 /* Custom fonts */
 @font-face {
@@ -70,4 +71,78 @@ samp {
 }
 
 body {
+}
+
+/* Font icon */
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("/fonts/untitled-font-1.eot");
+  src:url("/fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+  url("/fonts/untitled-font-1.woff") format("woff"),
+  url("/fonts/untitled-font-1.ttf") format("truetype"),
+  url("/fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\61";
+}
+.icon-linkedin:before {
+  content: "\62";
+}
+.icon-at-sign:before {
+  content: "\63";
+}
+
+/* Extra tag */
+.extra-tag {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1;
+  background-color: #FEF7F5;
+    color: #eb7350;
+  padding: 6px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.extra-tag:hover {
+  color: #FEF7F5;
+  background-color: #eb7350;
+  text-decoration: none;
+}
+
+.extra-tag [class^="icon-"] {
+  position: relative;
+  top: 2px;
 }
