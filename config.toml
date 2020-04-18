@@ -1,7 +1,7 @@
 baseURL = "http://kevinpageau.com/"
 title = "Kevin Pageau"
 theme = "hugo-notepadium"
-copyright = "©2019 Kevin Pageau."
+copyright = " Kevin Pageau."
 
 # languageCode = "zh-cn"
 hasCJKLanguage = false
