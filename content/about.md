@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "A short description about myself."
 draft: false
 ---
 
@@ -9,7 +10,7 @@ Hi! I'm Kevin. I've been into programming for about 8 years. I'm mostly self-tau
 
 Right now, I'm working as a web developer for <a href="https://www.flighthub.com" target="_blank">FlightHub</a>, an online travel agency. I am mostly focused on writing frontend code, but I often find myself doing backend as well.
 
-I love spending time on personal projects outside of that, too. Check out [my post]({{< relref "posts/test" >}}) detailing some of those.
+I love spending time on personal projects outside of that, too. Check out [my post]({{< relref "posts/some-personal-projects" >}}) detailing some of those.
 
 Some languages/technologies I'm familiar with and enjoy using include Typescript, React, SCSS, WebAssembly, Golang and C.
 
