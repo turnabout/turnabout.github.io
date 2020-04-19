@@ -1,0 +1,36 @@
+# Build the Hugo site and push the output to Github pages
+name: github pages
+
+# Build on push to master
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  # "deploy" job: Checkout the Hugo themes, set up Hugo, build the project with Hugo, then finally deploy to Github pages
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: develop
+          submodules: true  # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.69.0'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master
+
