@@ -158,3 +158,17 @@ body {
 .tag {
     color: #eb7350;
 }
+
+/* Override theme's text selection changes */
+::-webkit-selection {
+    background-color: highlight;
+    color: highlighttext;
+}
+::-moz-selection {
+    background-color: highlight;
+    color: highlighttext;
+}
+::selection {
+    background-color: highlight;
+    color: highlighttext;
+}
