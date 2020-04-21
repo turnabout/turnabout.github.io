@@ -15,7 +15,7 @@ categories: [
 ]
 ---
 
-Here is an overview of some personal projects I've worked on over the years. Some are less complete than others. :)
+Here is an overview of some personal projects I've worked on over the years, some more complete than others. :)
 
 ## Flappy Birdy
 

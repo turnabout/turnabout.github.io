@@ -8,11 +8,11 @@ draft: false
 
 Hi! I'm Kevin. I've been into programming for about 8 years. I'm mostly self-taught and I started off by making WordPress websites for a small web agency.
 
-Right now, I'm working as a web developer for <a href="https://www.flighthub.com" target="_blank">FlightHub</a>, an online travel agency. I am mostly focused on writing frontend code, but I often find myself doing backend as well.
+Right now, I'm working as a web developer for <a href="https://www.flighthub.com" target="_blank">FlightHub</a>, an online travel agency. I'm mostly focused on frontend (JavaScript, React), but I often find myself doing backend as well (PhP).
 
 I love spending time on personal projects outside of that, too. Check out [my post]({{< relref "posts/some-personal-projects" >}}) detailing some of those.
 
-Some languages/technologies I'm familiar with and enjoy using include Typescript, React, SCSS, WebAssembly, Golang and C.
+Some languages/technologies I'm familiar with and enjoy using include Typescript, React, WebAssembly, Golang and C.
 
 {{< extratag link="mailto:info.kevinpageau@gmail.com" icon="at-sign" text="Send me an email" noTargetBlank="1" >}}
 {{< extratag link="https://github.com/turnabout" icon="github" text="Check out my GitHub account" >}}
