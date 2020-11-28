@@ -1,7 +1,7 @@
 # Build the Hugo site and push the output to Github pages
 name: github pages
 
-# Build on push to master
+# Build on push to develop
 on:
   push:
     branches:
