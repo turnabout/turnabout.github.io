@@ -12,7 +12,7 @@ Right now, I'm working as an IT web developer for Ubisoft.
 
 I love spending time on personal projects outside of that, too. Check out [my post]({{< relref "posts/some-personal-projects" >}}) detailing some of those.
 
-Some languages/technologies I'm familiar with and enjoy using include Go, C, Typescript, React and WebAssembly.
+Some languages/technologies I'm familiar with and enjoy using include Go, C, TypeScript, React and WebAssembly.
 
 {{< extratag link="mailto:info.kevinpageau@gmail.com" icon="at-sign" text="Send me an email" noTargetBlank="1" >}}
 {{< extratag link="https://github.com/turnabout" icon="github" text="Check out my GitHub account" >}}
