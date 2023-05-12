@@ -1,53 +1,36 @@
-baseURL = "http://kevinpageau.com/"
+# The URL the site will be built for
+base_url = "https://kevinpageau.com"
+
+# The title of the site
 title = "Kevin Pageau"
-theme = "hugo-notepadium"
-copyright = " Kevin Pageau."
+description = "Kevin Pageau’s personal website"
 
-# languageCode = "zh-cn"
-hasCJKLanguage = false
+# The language of the site
+default_language = "en"
 
-enableRobotsTXT = true
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
 
-[markup.highlight]
-codeFences = true
-noClasses = false
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
 
-[markup.goldmark.renderer]
-unsafe = true  # enable raw HTML in Markdown
+theme = "no-style-please"
 
-[params]
-style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "January 2, 2006"  # if unset, default is "2006-01-02"
-logo = ""  # if you have a logo png
-license = ""  # CC License
-fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
 
-[params.comments]
-enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+[extra]
 
-[params.math]
-enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
-use = "katex"  # option: "katex", "mathjax". default: "katex"
+# no-style-please theme options
+list_pages = true
+twitter_card = false
 
-[params.syntax]
-use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
-theme = "xcode"
-darkTheme = "xcode-dark"  # apply this theme in dark mode
+header_nav = [
+    { name = "~home", url = "/" },
+    { name = "^github", url = "https://github.com/turnabout", new_tab=true },
+    { name = "^email", url = "mailto:info.kevinpageau@gmail.com", new_tab=true },
+]
 
-[params.share]
-enable = false
-addThisId = ""
-inlineToolId = ""
-
-[params.nav]
-showCategories = false
-showTags = false
-
-[params.assets]
-css = ["css/custom.css"]
-
-# Custom navigation
-
-[[params.nav.custom]]
-title = "About"
-url = "/about"
+logo = "images/logo.png"

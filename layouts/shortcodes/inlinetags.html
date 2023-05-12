@@ -1,4 +1,0 @@
-{{ range $tag := .Params }}
-    {{ $tagLower := lower $tag }}
-    <a class="tag" href="/tags/{{ $tagLower }}/">{{ $tag }}</a>
-{{ end }}
