@@ -5,8 +5,7 @@ name: GitHub pages
 on:
     push:
         branches:
-            - develop
-            - zola # TODO: temp testing
+            - main
 
 jobs:
     # Deploy to GitHub pages
@@ -16,7 +15,7 @@ jobs:
             -   name: Checkout
                 uses: actions/checkout@v3.5.2
                 with:
-                    ref: zola # TODO: temp testing, revert to "develop"
+                    ref: zola
                     submodules: true  # Add submodules to fetch Zola theme
                     fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
             -   name: Build and deploy
