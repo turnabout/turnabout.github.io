@@ -3,7 +3,7 @@ base_url = "https://kevinpageau.com"
 
 # The title of the site
 title = "Kevin Pageau"
-description = "Kevin Pageau’s personal website"
+description = "I’m a programmer who sometimes like to write things."
 
 # The language of the site
 default_language = "en"
