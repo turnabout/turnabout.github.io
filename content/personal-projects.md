@@ -14,6 +14,8 @@ It was my first attempt at making an emulator. Very fun to make and a great lear
 
 It also got me to appreciate unit tests since, without them, I would likely still be debugging the CPU instructions' emulation to this day.
 
+[View the source code on GitHub.](https://github.com/turnabout/space-invaders-emu)
+
 ## AWO
 AWO is an (unfinished) clone/port of Advance Wars. It’s written in C and uses OpenGL & GLFW for rendering support.
 
@@ -26,4 +28,6 @@ In order to achieve this, I've made use of WebAssembly. The project was set up s
 OpenGL may sound overkill for such a small game, but it actually ended up making certain things like palette swapping on the fly and zooming easier to implement.
 
 It was far from finished, but I had made a good deal of progress. However, it's unlikely I'll ever finish it. I had originally made it to try to fill a void left by the lack of Advance Wars games on the Nintendo Switch. However, Nintendo has since released Advance Wars Reboot Camp on the Switch, so I don't really feel the need to continue working on it.
+
+[View the source code on GitHub.](https://github.com/turnabout/awo)
 
