@@ -6,6 +6,7 @@ on:
     push:
         branches:
             - main
+            - zola-fix
 
 jobs:
     # Deploy to GitHub pages
@@ -15,7 +16,7 @@ jobs:
             -   name: Checkout
                 uses: actions/checkout@v3.5.2
                 with:
-                    ref: main
+                    ref: zola-fix # TODO: Revert to main
                     submodules: true  # Add submodules to fetch Zola theme
                     fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
             -   name: Build and deploy
