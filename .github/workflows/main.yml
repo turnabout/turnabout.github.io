@@ -1,4 +1,5 @@
-name: github pages
+# https://github.com/turnabout/turnabout.github.io
+name: GitHub pages
 
 # Build on push to develop
 on:
@@ -8,37 +9,17 @@ on:
             - zola # TODO: temp testing
 
 jobs:
-    # TODO: replace with Zola
-    # "deploy" job: Checkout the Hugo themes, set up Hugo, build the project with Hugo, then finally deploy to Github pages
+    # Deploy to GitHub pages
     deploy:
         runs-on: ubuntu-latest
         steps:
             -   name: Checkout
-                uses: actions/checkout@v2
+                uses: actions/checkout@v3.5.2
                 with:
                     ref: zola # TODO: temp testing, revert to "develop"
                     submodules: true  # Add submodules to fetch Zola theme
                     fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-            - name: Test 1
-              run: git status
-            - name: Test 2
-              run: ls -a
-            - name: Test 3
-              run: pwd
-
-#            -   name: Setup Hugo
-#                uses: peaceiris/actions-hugo@v2
-#                with:
-#                    hugo-version: '0.69.0'
-#                    # extended: true
-#
-#            -   name: Build
-#                run: hugo --minify
-#
-#            -   name: Deploy
-#                uses: peaceiris/actions-gh-pages@v3
-#                with:
-#                    github_token: ${{ secrets.GITHUB_TOKEN }}
-#                    publish_dir: ./public
-#                    publish_branch: master
-
+            -   name: Build and deploy
+                uses: shalzz/zola-deploy-action@v0.17.2
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
