@@ -21,7 +21,7 @@ AWO is an (unfinished) clone/port of Advance Wars. It’s written in C and uses 
 
 ![AWO game](/images/awo-1.png)
 
-It's not meant to be an exact, "full" clone of Advance Wars. I wanted to replicate multiplayer gameplay and eventually have it playable both in a desktop application and in a web browser, with online play capabilities.
+It's not meant to be an exact, "full" clone of Advance Wars. I wanted to replicate the multiplayer gameplay and eventually have it playable both in a desktop application and in a web browser, with online play capabilities.
 
 In order to achieve this, I've made use of WebAssembly. The project was set up so you can compile it both with Visual Studio like normal to produce the desktop application, and with Emscripten to produce a WebAssembly binary embeddable in a web application. This way, the same exact code can be reused between your desktop and any web browser that supports WebGL.
 
