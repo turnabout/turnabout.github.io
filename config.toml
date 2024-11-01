@@ -3,7 +3,7 @@ base_url = "https://kevinpageau.com"
 
 # The title of the site
 title = "Kevin Pageau"
-description = "I’m a programmer who sometimes like to write things."
+description = "Full-stack software developer with 10+ years of experience, currently at Ubisoft. Passionate about crafting innovative solutions that enhance user experiences."
 
 # The language of the site
 default_language = "en"
@@ -21,6 +21,10 @@ theme = "no-style-please"
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
+external_links_target_blank = true
+
+smart_punctuation = true
+
 [extra]
 
 # no-style-please theme options
@@ -29,7 +33,8 @@ twitter_card = false
 
 header_nav = [
     { name = "~home", url = "/" },
-    { name = "^github", url = "https://github.com/turnabout", new_tab=true },
+    { name = "^resume", url = "/resume.pdf", new_tab=true },
+    { name = "^linkedin", url = "https://www.linkedin.com/in/kevin-pageau", new_tab=true },
     { name = "^email", url = "mailto:info.kevinpageau@gmail.com", new_tab=true },
 ]
 
