@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+
+        <title>Personal Projects</title>
+        
+        <meta name="title" content="Personal Projects">
+        
+        <meta name="description" content="A quick look at some of my side projects.">
+        <meta name="generator" content="Zola v0.16.1">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://kevinpageau.com/personal-projects/">
+        <meta property="og:site_name" content="Kevin Pageau">
+        <meta property="og:title" content="Personal Projects">
+        <meta property="og:description" content="A quick look at some of my side projects.">
+        <meta property="og:image" content="https:&#x2F;&#x2F;kevinpageau.com&#x2F;images&#x2F;logo.png">
+
+        
+        
+        
+        <link rel="canonical" href="https://kevinpageau.com/personal-projects/">
+        <link rel="shortcut icon" type="image/x-icon" href="https://kevinpageau.com/images/logo.png">
+        <script type="application/ld+json">
+            {
+                "description":"A quick look at some of my side projects.",
+                "url":"https://kevinpageau.com/personal-projects/",
+                "@type":"WebSite",
+                "headline":"Personal Projects",
+                "name":"Personal Projects",
+                
+                "@context":"https://schema.org"
+            }
+        </script>
+        
+        
+        
+        <link rel="stylesheet" href="https://kevinpageau.com/style.css"/>
+        
+    </head>
+    <body theme="auto">
+        <div class="w">
+            <header>
+                
+                <nav>
+                    
+                    <a href="/" >~home</a>
+                    
+                    <a href="/resume.pdf" target="_blank" rel="noreferrer noopener">^resume</a>
+                    
+                    <a href="https://www.linkedin.com/in/kevin-pageau" target="_blank" rel="noreferrer noopener">^linkedin</a>
+                    
+                    <a href="mailto:info.kevinpageau@gmail.com" target="_blank" rel="noreferrer noopener">^email</a>
+                    
+                </nav>
+                
+                
+<p><a href="..">..</a>/personal-projects</p>
+<p class="post-meta"><time datetime=""></time></p>
+<h1>Personal Projects</h1>
+
+            </header>
+            <main class="page-content" aria-label="Content">
+                
+
+
+
+<p>A quick look at some of my side projects. Note that most are a bit old, but I still think they’re worth mentioning.</p>
+<h2 id="interviewqs">InterviewQs</h2>
+<p><a rel="noopener" target="_blank" href="https://interviewqs.com">InterviewQs</a> is an online platform used by data scientist professionals to practice for job interviews. It features a large collection of data science interview questions, categorized by topic and difficulty level.</p>
+<p><img src="/images/interviewqs.png" alt="InterviewQs home page" /></p>
+<p>I joined forces with two talented data scientists who founded the platform. I’m responsible for the development and maintenance of it, as well as the creation of new features.</p>
+<p>Over the years, I created:</p>
+<ul>
+<li>The entirety of the current website stack
+<ul>
+<li>Next.js/TypeScript</li>
+<li>Go backend</li>
+</ul>
+</li>
+<li>A newsletter system, implemented in Go and running on an AWS Lambda. Responsible for sending out the correct question emails to the correct users.</li>
+</ul>
+<p>I also migrated 400+ interview questions from a legacy collection of Pug files with redundant HTML into a clean, structured Markdown format. That was pretty fun.</p>
+<h2 id="space-invaders-emulator">Space Invaders Emulator</h2>
+<p>Emulator for the original Space Invaders arcade game. The entire thing aside from the tests is written in plain C. It uses the Windows API to display the emulated VRAM’s data on the screen to the user.</p>
+<p><img src="/images/space-invaders-emulator.jpg" alt="Space Invaders Emulator screen" /></p>
+<p>It was my first attempt at making an emulator. Very fun to make and a great learning experience. You naturally pick up on a lot of lower-level knowledge just by finishing such a project. It’s interesting just for learning a little bit more about how a CPU works.</p>
+<p>It also got me to appreciate unit tests since, without them, I would likely still be debugging the CPU instructions’ emulation to this day.</p>
+<p><a rel="noopener" target="_blank" href="https://github.com/turnabout/space-invaders-emu">View the source code on GitHub.</a></p>
+<h2 id="awo">AWO</h2>
+<p>AWO is an (unfinished) clone/port of Advance Wars. It’s written in C and uses OpenGL &amp; GLFW for rendering support.</p>
+<p><img src="/images/awo-1.png" alt="AWO game" /></p>
+<p>It’s not meant to be an exact, “full” clone of Advance Wars. I wanted to replicate the multiplayer gameplay and eventually have it playable both in a desktop application and in a web browser, with online play capabilities.</p>
+<p>In order to achieve this, I made use of WebAssembly. The project was set up so you can compile it both with Visual Studio like normal to produce the desktop application, and with Emscripten to produce a WebAssembly binary embeddable in a web application. This way, the same exact code can be reused between your desktop and any web browser that supports WebGL.</p>
+<p>OpenGL may sound overkill for such a small game, but it actually ended up making certain things like palette swapping on the fly and zooming easier to implement.</p>
+<p>It was far from finished, but I had made a good deal of progress. However, it’s unlikely I’ll ever finish it. I had originally made it to try to fill a void left by the lack of Advance Wars games on the Nintendo Switch. However, Nintendo has since released Advance Wars Reboot Camp on the Switch, and someone else already made a successful project similar to it.</p>
+<p><a rel="noopener" target="_blank" href="https://github.com/turnabout/awo">View the source code on GitHub.</a></p>
+
+
+            </main>
+            <footer>
+                
+<p class="taxonomies">
+
+</p>
+
+                
+            </footer>
+        </div>
+    </body>
+</html>
+        
