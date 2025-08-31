@@ -3,7 +3,7 @@ base_url = "https://kevinpageau.com"
 
 # The title of the site
 title = "Kevin Pageau"
-description = "Full-stack software developer with 10+ years of experience, currently at Ubisoft. Passionate about crafting innovative solutions that enhance user experiences."
+description = "Full-stack software developer with 10+ years of experience, currently at Lightspeed. Passionate about crafting innovative solutions that enhance user experiences."
 
 # The language of the site
 default_language = "en"
